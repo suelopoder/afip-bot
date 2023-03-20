@@ -22,7 +22,9 @@ const rango = `01/${mm}/2023 - ${lastDay}/${mm}/2023`
 async function main() {
   console.log('== Bajando mis comprobantes en el rango', rango, '==')
 
-  const browser = await puppeteer.launch({ headless: !process.env.DEBUG });
+  // FIXME: doens't work headlessly. Some problem with file download
+  // const browser = await puppeteer.launch({ headless: !process.env.DEBUG }); 
+  const browser = await puppeteer.launch({ headless: false });
   let page = await browser.newPage();
   await page.goto('https://auth.afip.gob.ar/contribuyente_/login.xhtml');
   
