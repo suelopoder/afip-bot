@@ -1,0 +1,23 @@
+{
+  "name": "afip-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mis-comprobantes": "node scripts/mis-comprobantes-export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suelopoder/afip-bot.git"
+  },
+  "author": "Diego Sisto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/suelopoder/afip-bot/issues"
+  },
+  "homepage": "https://github.com/suelopoder/afip-bot#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "puppeteer": "^19.7.5"
+  }
+}
